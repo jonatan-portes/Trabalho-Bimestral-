@@ -43,7 +43,7 @@ export default function TelaLogin() {
         <Button onPress={validarLogin} color="#c52a1c" title="Entrar"></Button>
       </View>
       <View style={styles.buttonContainer}>
-        <Button onPress={irParaCadastro} title="Ainda não tenho conta. Cadastrar." />
+        <Button onPress={irParaCadastro} title="Ainda não tenho conta" />
       </View>
       <StatusBar style="auto" />
     </ScrollView>

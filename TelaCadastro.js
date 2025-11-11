@@ -68,7 +68,7 @@ export default function TelaCadastro() {
           Alert.alert("Cadastro Salvo!", "Sua conta foi criada com sucesso.");
           navigation.navigate("Home");
         })
-        .catch((error) => { // <-- MUDANÇA AQUI (DB Error)
+        .catch((error) => { 
            alert("Erro ao salvar dados: " + error.message);
         });
       })
@@ -80,7 +80,7 @@ export default function TelaCadastro() {
       <Text style={styles.title}>Abra sua conta</Text>
       <TextInput onChangeText={setNome} value={nome} style={styles.input} placeholder="Nome Completo"></TextInput>
       <TextInput onChangeText={setCpf} value={cpf} style={styles.input} placeholder="CPF" keyboardType="numeric"></TextInput>
-      <TextInput onChangeText={setEmail} value={email} style={styles.input} placeholder="E-mail" autoCapitalize="none"></TextInput>
+      <TextInput onChangeText={setEmail} value={email} style={styles.input} placeholder="E-mail" ></TextInput>
       <TextInput onChangeText={setCep} value={cep} style={styles.input} placeholder='CEP'/>
       <Button onPress={buscarCep} title="Consultar CEP" /> 
       <TextInput value={logradouro} style={[styles.input, styles.inputDisabled]} placeholder="Rua" editable={false}></TextInput>
